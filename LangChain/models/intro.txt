@@ -1,0 +1,37 @@
+Language models 
+        ( AI sysyem designed to process , generate and understand natural language text )
+        
+        1) LLMs  --used for general purpose model for :
+                                        text generation
+                                        text summerization
+                                        code generation
+                                        question answering
+
+                    input== string ,    output == string
+
+        2) Chat Models --used for conversational tasks 
+                    input == sequence of messages , output == chat messages
+
+
+  | Feature               | LLMs (Base Models)                                                      | Chat Models (Instruction-Tuned)                                      |
+|-----------------------|-------------------------------------------------------------------------|----------------------------------------------------------------------|
+| Purpose               | Free-form text generation                                               | Optimized for multi-turn conversations                              |
+| Training Data         | General text corpora (books, articles)                                  | Fine-tuned on chat datasets (dialogues, user-assistant conversations)|
+| Memory & Context      | No built-in memory                                                      | Supports structured conversation history                            |
+| Role Awareness        | No understanding of "user" and "assistant" roles                        | Understands "system", "user", and "assistant" roles                 |
+| Example Models        | GPT-3, Llama-2-7B, Mistral-7B, OPT-1.3B                                  | GPT-4, GPT-3.5-turbo, Llama-2-Chat, Mistral-Instruct, Claude         |
+| Use Cases             | Text generation, summarization, translation, creative writing, code generation | Conversational AI, chatbots, virtual assistants, customer support, AI tutors |
+
+
+
+--------Disadvantage-----
+
+
+
+| Disadvantage                | Details                                                                                      |
+|-----------------------------|----------------------------------------------------------------------------------------------|
+| High Hardware Requirements  | Running large models (e.g., LLaMA-2-70B) requires expensive GPUs.                            |
+| Setup Complexity            | Requires installation of dependencies like PyTorch, CUDA, transformers.                      |
+| Lack of RLHF                | Most open-source models don’t have fine-tuning with human feedback, making them weaker in instruction-following. |
+| Limited Multimodal Abilities | Open models don’t support images, audio, or video like GPT-4V.                             |
+

@@ -1,0 +1,29 @@
+Open Source Models
+
+Open-source language models are freely available AI models that can be downloaded, 
+    modified, fine-tuned, and deployed without restrictions from a central provider.
+    Unlike closed-source models such as OpenAI’s GPT-4, Anthropic’s Claude, or Google’s Gemini, 
+    open-source models allow full control and customization.
+
+
+| Feature       | Open-Source Models                                                | Closed-Source Models                                            |
+|---------------|-------------------------------------------------------------------|------------------------------------------------------------------|
+| Cost          | Free to use (no API costs)                                        | Paid API usage (e.g., OpenAI charges per token)                 |
+| Control       | Can modify, fine-tune, and deploy anywhere                        | Locked to provider’s infrastructure                             |
+| Data Privacy  | Runs locally (no data sent to external servers)                   | Sends queries to provider’s servers                             |
+| Customization | Can fine-tune on specific datasets                                | No access to fine-tuning in most cases                          |
+| Deployment    | Can be deployed on *on-premise* servers or *cloud*                | Must use vendor’s API                                           |
+
+
+| Model               | Developer    | Parameters  | Best Use Case                                    |
+|---------------------|--------------|-------------|--------------------------------------------------|
+| LLaMA-2-7B/13B/70B  | Meta AI      | 7B - 70B    | General-purpose text generation                 |
+| Mixtral-8x7B        | Mistral AI   | 8x7B (MoE)  | Efficient & fast responses                      |
+| Mistral-7B          | Mistral AI   | 7B          | Best small-scale model (outperforms LLaMA-2-13B)|
+
+
+Q ) Where to find them 
+     HuggingFace :: largest repository for opensource LLMs
+           
+           1) Using HuggingFace inference API
+           2) Running locally

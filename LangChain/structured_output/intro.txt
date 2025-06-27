@@ -1,0 +1,14 @@
+OUTPUT --------> 1) structured 
+                        ( with_structured_output )
+                 
+                 2) unstructured
+                        ( output_parsers )
+
+
+
+1) WITH STRUCTURED 
+      to get a structured output first we need to specify the typeof output needed
+      ( pydanntic, TypeDict , json_schema )
+      TYPEDICT :: is a way to define a dictionary in python where you specify what keys and values should exists
+                    it helps to ensure that your dictionary follows a specific structure
+                    

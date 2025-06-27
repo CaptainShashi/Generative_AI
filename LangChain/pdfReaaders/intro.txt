@@ -1,0 +1,4 @@
+workflow of any document loader 
+
+PDF_load -----> split text ----> embedding ---> vector store ---> Retrivel ----> LLMs ------>Parse
+

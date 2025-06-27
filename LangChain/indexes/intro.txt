@@ -1,0 +1,24 @@
+indexes connect your application to external knowledge --> such as PDF,Database, Websites
+    1) document loader
+    2) text splitter 
+    3) vector store
+    4) Retriever 
+
+ suppose if i ask chatgpt about a topic from my company Database it doesnt provide answer because it dont have it 
+ so we gona connect that databse to chatgpt and then it provide answer 
+  
+  below is how it works 
+
+  PDF  -------------> AWS -----------> PDF-------->page1 ------->  embeddings1 
+        (uploads)         (doc loader)          -->page2 --------> embeddings2
+                                                -->page3 --------> embeddings3
+                                                -->page4  -------> embeddings4
+                                                                        |
+                                                                        |
+                                                                        |
+                                                                      DATABASE ( vector store )----->System query-------->final result
+                                                                        ^                           (pages + user query)
+                                                                        |
+                                                                        |
+                    User query----------->embeddings -----------> semantic search
+                                            (vectors)

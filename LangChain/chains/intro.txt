@@ -1,0 +1,26 @@
+we can build a pipeline with chains with any llms
+
+supppose we want to build a LLM that takes large input(1000words) in english , in output we nee dsummary in less than 100 words 
+
+( input --> LLM --> translate --> LLM --> summery)
+
+if you dont use a pipeline we have to manually do all the above steps 
+
+@ chains can solve the problem by 
+   automatically send the output from the mediate steps to the next LLM 
+   we can direclty pass output of intermediate steps to the next step without manually writing code to it 
+
+   1) parallel chains
+
+            input -->LLM1 --> report -->combine --> output
+              |              /
+              |           /
+              |        /
+              |    /
+             LLM2
+    
+    2) sequential chains
+
+      topic ----> LLM ----> reports ----> LLM -----> summery
+
+    3) conditional chains    ( similar to parallel chain )

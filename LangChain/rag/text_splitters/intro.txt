@@ -1,0 +1,3 @@
+process of breaking large chunks of texts ( like articles, PDFs, HTML pages ) into smaller pieces that LLM can understand
+
+working with smaller chunks of texts would be more memory efficient and allow better parallization of processing tasks

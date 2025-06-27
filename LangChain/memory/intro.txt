@@ -1,0 +1,22 @@
+LLM API calls are stateless 
+
+who is PM -----> LLM API------> ans :: narendra modi
+
+what is his age ---> LLM API ---> ans :: i dont know personal data about individuals 
+
+our LLM cant able to understand whom age i'm asking for 
+
+all request to LLM API is independent
+
+
+ConversationBufferMemory ::
+         Stores a transcript of recent messages. Great for short chats but can grow large quickly.
+
+ConversationBufferWindowMemory::
+         Only keeps the last N interactions to avoid excessive token usage.
+
+Summarizer-Based Memory::
+         Periodically summarizes older chat segments to keep a condensed memory footprint.
+
+Custom Memory::
+         For advanced use cases, you can store specialized state (e.g., the user’s preferences or key facts about them) in a custom memory class.

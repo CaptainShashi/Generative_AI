@@ -1,0 +1,4 @@
+string output parser is the simplest output parser in langchain , it parse the output of LLM and return as plane string
+
+# instead of using result.content we use string output parser
+

@@ -1,0 +1,14 @@
+chatbot-------> can make a conversation with you 
+        ( list of flights from hyd to guwahati )
+
+Ai Agents -----> can make convo + book flights 
+        (can book flights to the location i.e interacts with the browser )
+
+This is because
+ AI Agents has ---> reasoning capability 
+               ---> Tools
+    
+  suppose if i give an Agent a tool like calculator and weather API
+     ask for calculate hyd temperature multiply by 3:
+            agent dont have access to current temperature it goes to weatherAPI and find then it calculates
+            

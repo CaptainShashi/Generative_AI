@@ -1,0 +1,31 @@
+RAG --> Retrieval Augmented Generation
+    ( it is a technique that combines infomation retrieval with language generation, where a model retrieve a relevant
+      document from a knaoledge base and then uses them as context to generate accurate and grounded response)
+   
+    ---> simply connecting our model to any other database ot PDF to retrieve information from it 
+
+    Benefits of using RAG::
+        1) Use of upto date information
+        2) Better privacy 
+        3) No limit of document size
+
+Components of RAG::
+    1) Document loaders     ( text-loaders , pyPDFLoader , WebBaseLoader , CSVLoader )
+           --> are components in langchain used to load data from various source into a standerdised format, 
+            which can be used for chunking , splitting , embedding, retrieval and generation 
+
+    2) Text splitter 
+    3) vector Database 
+    4) retrievers
+
+
+Comparison: load() vs lazy_load()
+
+| Feature               | load()                                      | lazy_load()                                         |
+|----------------------|---------------------------------------------|-----------------------------------------------------|
+| Loading Type         | Eager Loading (loads everything at once)    | Lazy Loading (loads on demand)                      |
+| Returns              | A list of Document objects                  | A generator of Document objects                     |
+| Loading Behavior     | Loads all documents immediately             | Documents are not all loaded at once                |
+| Best When            | - Few documents                             | - Large documents or many files                     |
+|                      | - Need everything loaded upfront            | - Want to stream processing (e.g., chunking, embedding) |
+| Memory Usage         | Higher (loads everything into memory)       | Lower (loads only when needed)                      |
